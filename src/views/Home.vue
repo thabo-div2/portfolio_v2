@@ -13,6 +13,19 @@
 				<span class="cursor">&nbsp;</span>
 			</h3>
 		</div>
+		<div class="home-bio">
+			<h2>About <span>Me</span></h2>
+			<p>
+				My interest with the tech industry started with my brother and his
+				computer when I was a child. He would always be busy with his PC and
+				sometimes would let me use his computer. So to give my brother his
+				space, my parents got me my own PC. I always tried to keep up-to-date
+				with the latest tech by reading tech magazine, like NAG. In 2021 I
+				decided to chase my passions. I heard about Lifechoices Academy from my
+				mother and so I enrolled to do this course to learn coding and web
+				development.
+			</p>
+		</div>
 		<div class="home-icons">
 			<a href="https://github.com/thabo-div2"><i class="fab fa-github"></i></a>
 			<a href="https://www.linkedin.com/in/thabo-setsubi-40b3a9219/"
@@ -88,7 +101,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .home {
 	display: flex;
 	justify-content: center;
@@ -137,6 +150,10 @@ span.cursor {
 
 span.cursor.typing {
 	animation: none;
+}
+
+.home-bio {
+	width: 500px;
 }
 
 @keyframes cursorBlink {

@@ -2,9 +2,8 @@
 	<nav class="main-nav">
 		<button class="navbars"><i class="fas fa-bars"></i></button>
 		<router-link :to="{ name: 'Home' }">Home</router-link>
-		<router-link :to="{ name: 'About' }">About</router-link>
 		<router-link :to="{ name: 'Timeline' }">Timeline</router-link>
-		<router-link :to="{ name: 'Skills' }">Skills</router-link>
+		<router-link :to="{ name: 'Projects' }">Projects</router-link>
 		<router-link :to="{ name: 'Testimonial' }">Testimonial</router-link>
 		<router-link :to="{ name: 'Contact' }">Contact</router-link>
 		<button @click="changeColor" class="nav-button">
