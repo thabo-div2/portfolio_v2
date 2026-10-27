@@ -1,0 +1,141 @@
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.navbar-logo {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: white;
+}
+
+.navbar-logo span {
+  color: #a3e635;
+}
+
+/* Navigation links */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar-links a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #cbd5e1;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #a3e635;
+}
+
+/* Contact button */
+
+.navbar-contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #a3e635;
+  color: #0f172a;
+
+  padding: 12px 20px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.navbar-contact:hover {
+  background: #bef264;
+  transform: translateY(-2px);
+}
+
+/* Hidden on desktop */
+
+.navbar-toggle,
+.mobile-contact {
+  display: none;
+}
+
+/* Mobile navigation */
+
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 70px;
+    padding: 0 20px;
+  }
+
+  .navbar-contact {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #111827;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 15px 20px 25px;
+
+    border-bottom: 1px solid #334155;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links a {
+    padding: 14px 10px;
+    width: 100%;
+  }
+
+  .navbar-links .mobile-contact {
+    display: block;
+    margin-top: 12px;
+    background: #a3e635;
+    color: #0f172a;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+}
